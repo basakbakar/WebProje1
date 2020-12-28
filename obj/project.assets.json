@@ -6101,11 +6101,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BasakPc\\source\\repos\\WebProje1\\WebProje1.csproj",
+      "projectUniqueName": "C:\\Users\\BasakPc\\Documents\\GitHub\\WebProje1\\WebProje1\\WebProje1.csproj",
       "projectName": "WebProje1",
-      "projectPath": "C:\\Users\\BasakPc\\source\\repos\\WebProje1\\WebProje1.csproj",
+      "projectPath": "C:\\Users\\BasakPc\\Documents\\GitHub\\WebProje1\\WebProje1\\WebProje1.csproj",
       "packagesPath": "C:\\Users\\BasakPc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BasakPc\\source\\repos\\WebProje1\\obj\\",
+      "outputPath": "C:\\Users\\BasakPc\\Documents\\GitHub\\WebProje1\\WebProje1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

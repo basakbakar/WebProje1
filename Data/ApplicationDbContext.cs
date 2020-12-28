@@ -19,5 +19,15 @@ namespace WebProje1.Data
         public DbSet<Antrenor> Antrenor { get; set; }
 
         public DbSet<Brans> Brans { get; set; }
+
+        public DbSet<AntrenorAntrenman> AntrenorAntrenman { get; set; }
+
+        public DbSet<Il> Il { get; set; }
+
+        public DbSet<Ilce> Ilce { get; set; }
+
+        public DbSet<Ulke> Ulke { get; set; }
+
+        public DbSet<SporSalon> SporSalon { get; set; }
     }
 }
