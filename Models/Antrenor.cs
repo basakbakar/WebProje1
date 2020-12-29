@@ -9,6 +9,6 @@ namespace WebProje1.Models
     {
         public int Id { get; set; }
 
-        public string AntrenorId { get; set; }
+        public string AntrenorAd { get; set; }
     }
 }

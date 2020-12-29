@@ -263,7 +263,7 @@ namespace WebProje1.Data.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("AntrenorId")
+                    b.Property<string>("AntrenorAd")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

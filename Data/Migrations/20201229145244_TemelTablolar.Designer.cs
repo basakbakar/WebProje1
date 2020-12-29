@@ -10,7 +10,7 @@ using WebProje1.Data;
 namespace WebProje1.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201228131546_TemelTablolar")]
+    [Migration("20201229145244_TemelTablolar")]
     partial class TemelTablolar
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -265,7 +265,7 @@ namespace WebProje1.Data.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("AntrenorId")
+                    b.Property<string>("AntrenorAd")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -286,6 +286,78 @@ namespace WebProje1.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Brans");
+                });
+
+            modelBuilder.Entity("WebProje1.Models.Il", b =>
+                {
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("IlAd")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Il");
+                });
+
+            modelBuilder.Entity("WebProje1.Models.Ilce", b =>
+                {
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("IlId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("IlceAd")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IlId");
+
+                    b.ToTable("Ilce");
+                });
+
+            modelBuilder.Entity("WebProje1.Models.SporSalon", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("Adres")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("IlceId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Iletisim")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SporSalonAd")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IlceId");
+
+                    b.ToTable("SporSalon");
+                });
+
+            modelBuilder.Entity("WebProje1.Models.Ulke", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("UlkeAd")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Ulke");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -356,6 +428,24 @@ namespace WebProje1.Data.Migrations
                     b.Navigation("Antrenor");
 
                     b.Navigation("Brans");
+                });
+
+            modelBuilder.Entity("WebProje1.Models.Ilce", b =>
+                {
+                    b.HasOne("WebProje1.Models.Il", "Il")
+                        .WithMany()
+                        .HasForeignKey("IlId");
+
+                    b.Navigation("Il");
+                });
+
+            modelBuilder.Entity("WebProje1.Models.SporSalon", b =>
+                {
+                    b.HasOne("WebProje1.Models.Ilce", "Ilce")
+                        .WithMany()
+                        .HasForeignKey("IlceId");
+
+                    b.Navigation("Ilce");
                 });
 #pragma warning restore 612, 618
         }

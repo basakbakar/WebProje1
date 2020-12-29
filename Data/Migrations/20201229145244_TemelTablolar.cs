@@ -2,34 +2,34 @@
 
 namespace WebProje1.Data.Migrations
 {
-    public partial class YeniTablolar : Migration
+    public partial class TemelTablolar : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "AntrenorAntrenman",
+                name: "Antrenor",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    AntrenorId = table.Column<int>(type: "int", nullable: false),
-                    AntrenmanId = table.Column<int>(type: "int", nullable: false)
+                    AntrenorAd = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AntrenorAntrenman", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_AntrenorAntrenman_Antrenman_AntrenmanId",
-                        column: x => x.AntrenmanId,
-                        principalTable: "Antrenman",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_AntrenorAntrenman_Antrenor_AntrenorId",
-                        column: x => x.AntrenorId,
-                        principalTable: "Antrenor",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                    table.PrimaryKey("PK_Antrenor", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Brans",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    BransAd = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Brans", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -55,6 +55,37 @@ namespace WebProje1.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Ulke", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Antrenman",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AntrenmanAd = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Sure = table.Column<int>(type: "int", nullable: true),
+                    EtkiBolgesi = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    KapakFoto = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Video = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    BransId = table.Column<int>(type: "int", nullable: false),
+                    AntrenorId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Antrenman", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Antrenman_Antrenor_AntrenorId",
+                        column: x => x.AntrenorId,
+                        principalTable: "Antrenor",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Antrenman_Brans_BransId",
+                        column: x => x.BransId,
+                        principalTable: "Brans",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -99,14 +130,14 @@ namespace WebProje1.Data.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_AntrenorAntrenman_AntrenmanId",
-                table: "AntrenorAntrenman",
-                column: "AntrenmanId");
+                name: "IX_Antrenman_AntrenorId",
+                table: "Antrenman",
+                column: "AntrenorId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_AntrenorAntrenman_AntrenorId",
-                table: "AntrenorAntrenman",
-                column: "AntrenorId");
+                name: "IX_Antrenman_BransId",
+                table: "Antrenman",
+                column: "BransId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Ilce_IlId",
@@ -122,13 +153,19 @@ namespace WebProje1.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "AntrenorAntrenman");
+                name: "Antrenman");
 
             migrationBuilder.DropTable(
                 name: "SporSalon");
 
             migrationBuilder.DropTable(
                 name: "Ulke");
+
+            migrationBuilder.DropTable(
+                name: "Antrenor");
+
+            migrationBuilder.DropTable(
+                name: "Brans");
 
             migrationBuilder.DropTable(
                 name: "Ilce");
