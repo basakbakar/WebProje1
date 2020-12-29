@@ -1,9 +1,90 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">   
+    <link rel="stylesheet" href="~/css/Genel.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <script src="~/js/font1.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery-3.3.1.min.js"></script>
+    <script>
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        window.dataLayer = window.dataLayer || [],
+            gtag("js", new Date),
+            gtag("config", "UA-24315669-1")</script>
+</head>
+<body>
+    <div class="side-title">
+        <div class="line"></div>
+        #Challenge
+    </div>
+    <header>
+        <div class="header-img">
+            <img src="~/images/head-image.png" alt="">
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+        <div class="header-title">
+            <h1>Haydi Başlayalım!</h1>
+            <div class="sig-tag">
+                <div class="sig-line"></div>
+            </div>
+            <a href="#workouts" class="scroll-btn">
+                <span></span>
+                Kaydır
+            </a>
+        </div>
+    </header>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome m</h1>
-    <h1 class="display-4">Welcome m</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <section id="workouts" class="workout-list">
+        <div class="sep-line"></div>
+        <p class="section-title">Branşlar</p>
+        <div class="programs-list">
+            <a href="">
+                <div class="program-card">
+                    <img src="~/images/Pilates.png" alt="" class="card-thumbnail">
+                    <div class="overlay">
+                        <img src="~/images/overlay.png" alt="">
+                        <div class="detail">
+                            <p class="title">Pilates</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="program-card">
+                    <img src="~/images/Fitness.png" alt="" class="card-thumbnail">
+                    <div class="overlay">
+                        <img src="~/images/overlay.png" alt="">
+                        <div class="detail">
+                            <p class="title">Fitness</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="program-card">
+                    <img src="~/images/Yoga.png" alt="" class="card-thumbnail">
+                    <div class="overlay">
+                        <img src="~/images/overlay.png" alt="">
+                        <div class="detail">
+                            <p class="title">Fitness</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+@*<div class="text-center">
+        <h1 class="display-4">Welcome m</h1>
+        <h1 class="display-4">Welcome m</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>*@

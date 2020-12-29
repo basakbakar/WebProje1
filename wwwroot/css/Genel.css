@@ -1,0 +1,1079 @@
+﻿.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body {
+    height: 100%;
+    font-family: 'Heebo', sans-serif;
+    color: #22263B;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5A36F5;
+    transition: all .25s ease;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #5A36F5;
+    }
+
+.main-content {
+    background: #fff;
+    position: relative;
+}
+
+    .main-content.single-program {
+        background: #FAFBFD;
+        position: relative;
+    }
+
+/* Programs listing page */
+.side-title {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    right: -125px;
+    transform: rotate(90deg);
+    font-size: 12px;
+    z-index: 1000;
+}
+
+    .side-title .line {
+        width: 130px;
+        height: 1px;
+        background-color: #22263B;
+        margin-right: 30px;
+    }
+
+.wrapper {
+    position: relative;
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-content nav {
+    position: absolute;
+    width: 100%;
+    padding: 8px 0 0;
+    z-index: 2;
+}
+
+    .main-content nav .wrapper {
+        position: relative;
+        max-width: 1250px;
+        width: 100%;
+        margin: 0 auto;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 75px;
+    }
+
+        .main-content nav .wrapper img {
+            width: 113px;
+        }
+
+        .main-content nav .wrapper .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+            .main-content nav .wrapper .nav-links a {
+                display: inline-block;
+                font-family: Ubuntu, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: 0.1em;
+                transition: color 0.2s;
+                font-size: 0.875em;
+                text-decoration: none;
+                padding: 15px;
+                white-space: nowrap;
+                color: #222323;
+            }
+
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    overflow: hidden;
+}
+
+    header .header-img {
+        position: absolute;
+        right: 40%;
+        top: -50px;
+        height: 100%;
+        transform: translateX(50%);
+    }
+
+        header .header-img img {
+            height: 100%;
+        }
+
+    header .header-title {
+        margin-bottom: 150px;
+        z-index: 10;
+    }
+
+        header .header-title h1 {
+            font-weight: 300;
+            font-size: 60px;
+            margin: 0 0 14px;
+            line-height: 70px;
+        }
+
+.sig-tag {
+    display: flex;
+    align-items: center;
+    margin: 0 0 30px;
+    font-size: 14px;
+}
+
+    .sig-tag .sig-line {
+        height: 1px;
+        width: 10px;
+        margin-right: 5px;
+        background-color: #22263B;
+    }
+
+header .header-title {
+    position: relative;
+}
+
+    header .header-title button {
+        padding: 15px 40px;
+        background-color: transparent;
+        border: 1px solid #5A36F5;
+        color: #5A36F5;
+        cursor: pointer;
+        transition: all .25s ease;
+    }
+
+        header .header-title button:hover {
+            background-color: #5A36F5;
+            color: #FFF;
+        }
+
+header .scroll-btn {
+    position: absolute;
+    bottom: -50vh;
+    left: 100px;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #000;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+
+    header .scroll-btn:hover {
+        opacity: .5;
+    }
+
+header .scroll-btn {
+    padding-top: 55px;
+}
+
+    header .scroll-btn span {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 18px;
+        height: 18px;
+        margin-left: -12px;
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-animation: sdb05 1.5s infinite;
+        animation: sdb05 1.5s infinite;
+        box-sizing: border-box;
+    }
+
+@-webkit-keyframes sdb05 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes sdb05 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+.workout-list {
+    width: 100%;
+}
+
+    .workout-list .sep-line {
+        height: 1px;
+        width: 40px;
+        margin-bottom: 20px;
+        background-color: #22263B;
+    }
+
+    .workout-list .section-title {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .workout-list .programs-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+        .workout-list .programs-list .program-card {
+            position: relative;
+            width: 360px;
+            height: 470px;
+            margin-bottom: 30px;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+            .workout-list .programs-list .program-card .card-thumbnail {
+                width: 100%;
+            }
+
+            .workout-list .programs-list .program-card .overlay {
+                position: absolute;
+                top: 58px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+                transition: all .3s ease;
+            }
+
+            .workout-list .programs-list .program-card:hover .overlay {
+                top: 0;
+            }
+
+            .workout-list .programs-list .program-card .overlay img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .workout-list .programs-list .program-card .overlay .detail {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                color: white;
+                padding: 0 20px 20px;
+            }
+
+                .workout-list .programs-list .program-card .overlay .detail .date {
+                    font-size: 12px;
+                    margin: 0;
+                }
+
+                .workout-list .programs-list .program-card .overlay .detail .title {
+                    font-size: 20px;
+                    margin: 0;
+                }
+
+                .workout-list .programs-list .program-card .overlay .detail .schedule {
+                    display: flex;
+                    font-size: 16px;
+                }
+
+                    .workout-list .programs-list .program-card .overlay .detail .schedule .entry {
+                        margin-right: 20px;
+                        margin-top: 5px;
+                    }
+
+                        .workout-list .programs-list .program-card .overlay .detail .schedule .entry .value {
+                            font-weight: bold;
+                            margin: 0;
+                            color: #2DE2CF;
+                        }
+
+                        .workout-list .programs-list .program-card .overlay .detail .schedule .entry .label {
+                            font-size: 14px;
+                            margin: 0;
+                        }
+
+                .workout-list .programs-list .program-card .overlay .detail .more-details {
+                    margin: 0;
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+
+                    .workout-list .programs-list .program-card .overlay .detail .more-details:last-of-type {
+                        margin-top: 0px;
+                    }
+
+                    .workout-list .programs-list .program-card .overlay .detail .more-details span {
+                        color: #D4DAE6;
+                    }
+
+.ad-area {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+    .ad-area img {
+        width: 100%;
+    }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+    footer p {
+        font-size: 12px;
+        color: #777777;
+    }
+
+    footer i {
+        margin-left: 30px;
+    }
+
+@media only screen and (max-width: 1200px) {
+    header .header-img {
+        right: 0;
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    header .header-img {
+        right: -150px;
+    }
+
+    header .header-title {
+        margin-bottom: 100px;
+    }
+
+    .workout-list .programs-list .program-card {
+        width: 100%;
+        height: calc(100% - 37px);
+    }
+
+    .workout-list .programs-list a {
+        width: 48%;
+    }
+
+    .workout-list .programs-list .program-card .overlay {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 875px) {
+    header .header-title h1 {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    header {
+        height: 100%;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+        header .header-img {
+            position: relative;
+            right: initial;
+            top: 40px;
+            height: 320px;
+            margin-bottom: 70px;
+        }
+
+        header .header-title {
+            margin-bottom: 10px;
+        }
+
+            header .header-title h1 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+
+        header .scroll-btn {
+            bottom: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    .workout-list .programs-list .program-card {
+        width: 100%;
+        height: calc(100% - 37px);
+    }
+
+    .workout-list .programs-list a {
+        width: 100%;
+    }
+}
+
+/* Single program page */
+
+.program-header {
+    width: 100%;
+    height: 570px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+    .program-header .program-head-info {
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+        width: 100%;
+    }
+
+        .program-header .program-head-info .info-box {
+            width: 540px;
+            padding: 70px 40px 50px;
+            background-color: white;
+        }
+
+            .program-header .program-head-info .info-box .title {
+                font-size: 46px;
+                margin: 16px 0 40px;
+                line-height: 48px;
+            }
+
+            .program-header .program-head-info .info-box .divider-line {
+                width: 100%;
+                height: 1px;
+                background-color: rgba(0, 0, 0, 0.1);
+                margin-bottom: 40px;
+            }
+
+            .program-header .program-head-info .info-box .type-and-equips {
+                margin-bottom: 60px;
+            }
+
+                .program-header .program-head-info .info-box .type-and-equips p {
+                    margin: 0 0 10px;
+                }
+
+            .program-header .program-head-info .info-box .schedule {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+                .program-header .program-head-info .info-box .schedule .entries {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .program-header .program-head-info .info-box .schedule .entry {
+                    margin-left: 30px;
+                }
+
+                    .program-header .program-head-info .info-box .schedule .entry img {
+                        height: 25px;
+                    }
+
+                    .program-header .program-head-info .info-box .schedule .entry:first-of-type {
+                        margin-left: 0px;
+                        padding-right: 30px;
+                        border-right: 1px solid rgba(0, 0, 0, 0.1);
+                    }
+
+                    .program-header .program-head-info .info-box .schedule .entry p {
+                        font-size: 18px;
+                        margin: 0;
+                    }
+
+                    .program-header .program-head-info .info-box .schedule .entry .value {
+                        font-weight: bold;
+                    }
+
+                .program-header .program-head-info .info-box .schedule .btns-holder {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .program-header .program-head-info .info-box .schedule .download-btn {
+                    font-size: 14px;
+                    background-color: #5A36F5;
+                    color: white;
+                    border: 0;
+                    padding: 16px 35px;
+                    cursor: pointer;
+                }
+
+                    .program-header .program-head-info .info-box .schedule .download-btn:first-of-type {
+                        margin-bottom: 10px;
+                    }
+
+.calendar-section {
+    margin: 50px 0;
+    overflow-x: hidden;
+}
+
+    .calendar-section .section-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        z-index: 10;
+    }
+
+        .calendar-section .section-title p {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+.filter-holder {
+    display: flex;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+    .filter-holder .check-desc {
+        position: relative;
+        background-color: #2DE2CF;
+        font-size: 14px;
+        padding: 6px 20px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+.clear-filter {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    max-width: 360px;
+    height: 40px;
+    padding: 0 20px;
+    background-color: #5A36F5;
+    color: #fff;
+    margin: 20px auto 0;
+    cursor: pointer;
+}
+
+    .clear-filter.clear {
+        display: flex;
+    }
+
+.filter-holder .main-filter {
+    position: relative;
+    background-color: #FFDFD6;
+    font-size: 14px;
+    padding: 6px 20px;
+    cursor: pointer;
+}
+
+    .filter-holder .main-filter i {
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .filter-holder .main-filter .dd-menu {
+        position: absolute;
+        top: 35px;
+        left: 100%;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        z-index: 10;
+        transition: all .25s ease;
+    }
+
+        .filter-holder .main-filter .dd-menu.open {
+            left: 0;
+            opacity: 1;
+        }
+
+        .filter-holder .main-filter .dd-menu li {
+            padding: 4px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all .25s ease;
+        }
+
+            .filter-holder .main-filter .dd-menu li:hover {
+                background-color: #5A36F5;
+                color: white;
+            }
+
+            .filter-holder .main-filter .dd-menu li.selected {
+                background-color: #5A36F5;
+                color: white;
+            }
+
+.calendar-section .calendar-container {
+    display: flex;
+    background-color: #fff;
+    padding: 30px;
+}
+
+    .calendar-section .calendar-container .calendar-timeline {
+        min-width: 10px;
+        margin-right: 55px;
+    }
+
+        .calendar-section .calendar-container .calendar-timeline .line {
+            height: 100%;
+            width: 5px;
+            border-right: 1px solid #5A36F5;
+        }
+
+    .calendar-section .calendar-container .calendar-entries {
+        width: 100%;
+    }
+
+        .calendar-section .calendar-container .calendar-entries .cal-entry {
+            position: relative;
+        }
+
+            .calendar-section .calendar-container .calendar-entries .cal-entry .entry-dot {
+                position: absolute;
+                top: 0;
+                left: -64px;
+                height: 10px;
+                width: 10px;
+                border-radius: 10px;
+                background-color: #5A36F5;
+            }
+
+            .calendar-section .calendar-container .calendar-entries .cal-entry .info {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                padding-bottom: 10px;
+                margin-bottom: 30px;
+            }
+
+                .calendar-section .calendar-container .calendar-entries .cal-entry .info p {
+                    margin: 0;
+                    font-size: 12px;
+                }
+
+            .calendar-section .calendar-container .calendar-entries .cal-entry .videos {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+                .calendar-section .calendar-container .calendar-entries .cal-entry .videos .restday-icon {
+                    margin: -20px auto 35px;
+                    width: 50px;
+                }
+
+                .calendar-section .calendar-container .calendar-entries .cal-entry .videos a {
+                    width: 265px;
+                    margin-bottom: 30px;
+                    margin-right: 30px;
+                }
+
+                .calendar-section .calendar-container .calendar-entries .cal-entry .videos .video {
+                    position: relative;
+                }
+
+                    .calendar-section .calendar-container .calendar-entries .cal-entry .videos .video .video-thumb {
+                        height: 148px;
+                    }
+
+                    .calendar-section .calendar-container .calendar-entries .cal-entry .videos .video p {
+                        font-size: 14px;
+                        margin: 0;
+                        overflow: hidden;
+                        position: relative;
+                        line-height: 1.2em;
+                        max-height: 32px;
+                        text-align: justify;
+                        margin-right: 0px;
+                        padding-right: 14px;
+                    }
+
+                        .calendar-section .calendar-container .calendar-entries .cal-entry .videos .video p:before {
+                            content: '...';
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                        }
+
+                        .calendar-section .calendar-container .calendar-entries .cal-entry .videos .video p:after {
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            width: 1em;
+                            height: 1em;
+                            margin-top: 0.2em;
+                            background: white;
+                        }
+
+                    .calendar-section .calendar-container .calendar-entries .cal-entry .videos .video.optional img {
+                        -webkit-filter: grayscale(100%);
+                        /* Safari 6.0 - 9.0 */
+                        filter: grayscale(100%);
+                    }
+
+                    .calendar-section .calendar-container .calendar-entries .cal-entry .videos .video .optional-buble {
+                        position: absolute;
+                        top: 5px;
+                        right: 7px;
+                        font-size: 12px;
+                        color: #fff;
+                        background-color: #2DE2CF;
+                        padding: 2px 10px;
+                        z-index: 1;
+                    }
+
+.program-details {
+    display: flex;
+    padding-top: 25px;
+}
+
+    .program-details .details .desc .label {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .program-details .details .desc .value {
+        color: #575A68;
+        line-height: 34px;
+        margin: 20px 0;
+    }
+
+    .program-details .extra-details {
+        min-width: 360px;
+        margin-left: 125px;
+    }
+
+        .program-details .extra-details .small-ad {
+            width: 360px;
+            height: auto;
+            margin: 0 auto 25px;
+        }
+
+        .program-details .extra-details .meals .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 0 20px;
+        }
+
+        .program-details .extra-details .meals .entries {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            .program-details .extra-details .meals .entries .entry {
+                margin-right: 20px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+                .program-details .extra-details .meals .entries .entry img {
+                    width: 100px;
+                }
+
+                .program-details .extra-details .meals .entries .entry p {
+                    margin: 0;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+
+        .program-details .extra-details .bef-aft .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 0 20px;
+        }
+
+        .program-details .extra-details .bef-aft .entries {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+            .program-details .extra-details .bef-aft .entries img {
+                height: 100px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+.faq-holder {
+    margin-bottom: 30px;
+}
+
+    .faq-holder .section-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0 0 20px;
+    }
+
+    .faq-holder .faq-list .entry {
+        height: 20px;
+        background-color: white;
+        padding: 12px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+        .faq-holder .faq-list .entry.active {
+            height: 100%;
+        }
+
+        .faq-holder .faq-list .entry .title {
+            display: flex;
+        }
+
+            .faq-holder .faq-list .entry .title p {
+                font-size: 14px;
+                font-weight: bold;
+                margin: 0;
+            }
+
+            .faq-holder .faq-list .entry .title .point {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 20px;
+                min-width: 20px;
+                margin-right: 12px;
+                font-weight: bold;
+                color: #777777;
+            }
+
+                .faq-holder .faq-list .entry .title .point span {
+                    display: none;
+                }
+
+                .faq-holder .faq-list .entry .title .point .plus {
+                    display: block;
+                }
+
+        .faq-holder .faq-list .entry.active .title .point .plus {
+            display: none;
+        }
+
+        .faq-holder .faq-list .entry.active .title .point .minus {
+            display: block;
+        }
+
+        .faq-holder .faq-list .entry .desc {
+            padding-left: 32px;
+        }
+
+@media only screen and (max-width: 1050px) {
+    .program-header .program-head-info .info-box {
+        width: 480px;
+        padding: 70px 40px 50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .main-content nav .wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .program-header nav {
+        background-color: #FFF;
+    }
+
+    .program-header .program-head-info .info-box {
+        width: 430px;
+        padding: 70px 40px 50px;
+    }
+
+    .program-details {
+        display: block;
+    }
+
+        .program-details .extra-details {
+            min-width: 100%;
+            margin-left: 0;
+        }
+
+    .calendar-section .calendar-container .calendar-timeline {
+        min-width: 10px;
+        margin-right: 25px;
+    }
+
+    .calendar-section .calendar-container .calendar-entries .cal-entry .entry-dot {
+        left: -34px;
+    }
+
+    .cal-entry .videos {
+        justify-content: space-between;
+    }
+
+        .cal-entry .videos a {
+            width: 48% !important;
+            margin-right: 0px !important;
+        }
+}
+
+@media only screen and (max-width: 680px) {
+    .calendar-section .section-title {
+        flex-direction: column;
+    }
+
+        .calendar-section .section-title p {
+            margin-bottom: 10px;
+        }
+
+    .program-header .program-head-info .info-box {
+        width: 410px;
+        padding: 120px 40px 50px;
+    }
+
+    .program-details {
+        display: block;
+    }
+
+        .program-details .extra-details {
+            min-width: 100%;
+            margin-left: 0;
+        }
+
+    .faq-holder .faq-list .entry {
+        height: 28px;
+    }
+
+    .calendar-section .calendar-container .calendar-timeline {
+        min-width: 10px;
+        margin-right: 25px;
+    }
+
+    .calendar-section .calendar-container .calendar-entries .cal-entry .entry-dot {
+        left: -34px;
+    }
+
+    .cal-entry .videos {
+        justify-content: space-between;
+    }
+
+        .cal-entry .videos a {
+            width: 100% !important;
+            margin-right: 0px !important;
+        }
+
+            .cal-entry .videos a img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+    .program-header {
+        height: 250px;
+        margin-bottom: 660px;
+    }
+
+        .program-header .program-head-info {
+            justify-content: center;
+            padding-top: 170px;
+        }
+
+            .program-header .program-head-info .info-box {
+                padding: 60px 40px 50px;
+            }
+
+                .program-header .program-head-info .info-box .schedule {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                    .program-header .program-head-info .info-box .schedule .btns-holder {
+                        width: 100%;
+                    }
+
+                    .program-header .program-head-info .info-box .schedule .download-btn {
+                        width: 100%;
+                        text-align: center;
+                        margin: 25px auto 0;
+                    }
+
+                        .program-header .program-head-info .info-box .schedule .download-btn:last-of-type {
+                            margin: 5px auto 0px;
+                        }
+}
+
+@media only screen and (max-width: 445px) {
+    .program-header .program-head-info .info-box .title {
+        font-size: 35px;
+        line-height: 40px;
+        margin: 16px 0 25px;
+    }
+
+    .calendar-section {
+        margin: 50px 0;
+        overflow-x: hidden;
+        zoom: 0.8;
+    }
+}
