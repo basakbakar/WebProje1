@@ -19,6 +19,8 @@ namespace WebProje1.Models
 
         public string Video { get; set; }
 
+        //public DateTime Tarih { get; set; }
+
         public int BransId { get; set; }
         public Brans Brans { get; set; }
 
