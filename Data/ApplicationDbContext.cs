@@ -20,15 +20,6 @@ namespace WebProje1.Data
 
         public DbSet<Brans> Brans { get; set; }
 
-        //public DbSet<AntrenorAntrenman> AntrenorAntrenman { get; set; }
-        //public int Id { get; set; }
-
-        //public int AntrenorId { get; set; }
-        //public int AntrenmanId { get; set; }
-
-        //public Antrenman Antrenman { get; set; }
-        //public Antrenor Antrenor { get; set; }
-
         public DbSet<Il> Il { get; set; }
 
         public DbSet<Ilce> Ilce { get; set; }

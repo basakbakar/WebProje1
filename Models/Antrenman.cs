@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,7 +20,8 @@ namespace WebProje1.Models
 
         public string Video { get; set; }
 
-        //public DateTime Tarih { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime Tarih { get; set; }
 
         public int BransId { get; set; }
         public Brans Brans { get; set; }

@@ -28,6 +28,9 @@
                 @Html.DisplayNameFor(model => model.Video)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Tarih)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Brans)
             </th>
             <th>
@@ -50,10 +53,13 @@
             </td>
             <td>
                 @*@Html.DisplayFor(modelItem => item.KapakFoto)*@
-                <img src="@Url.Content(item.KapakFoto)" class="d-block w-100" asp-append-version="true" />
+                <img src="@Url.Content(item.KapakFoto)" class="d-block w-50" asp-append-version="true" />
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Video)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tarih)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Brans.Id)

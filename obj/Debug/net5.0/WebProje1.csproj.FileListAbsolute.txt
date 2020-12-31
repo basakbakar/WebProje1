@@ -261,11 +261,6 @@ C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\bin\Debug\net5.0\runtimes\
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Antrenman\Create.cshtml.g.cs
-C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Antrenman\Delete.cshtml.g.cs
-C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Antrenman\Details.cshtml.g.cs
-C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Antrenman\Edit.cshtml.g.cs
-C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Antrenman\Index.cshtml.g.cs
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Antrenor\Create.cshtml.g.cs
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Antrenor\Delete.cshtml.g.cs
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Antrenor\Details.cshtml.g.cs
@@ -296,3 +291,8 @@ C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Vie
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\SporSalon\Details.cshtml.g.cs
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\SporSalon\Edit.cshtml.g.cs
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\SporSalon\Index.cshtml.g.cs
+C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Antrenman\Create.cshtml.g.cs
+C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Antrenman\Delete.cshtml.g.cs
+C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Antrenman\Details.cshtml.g.cs
+C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Antrenman\Edit.cshtml.g.cs
+C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Antrenman\Index.cshtml.g.cs

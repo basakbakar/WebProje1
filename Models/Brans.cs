@@ -11,6 +11,8 @@ namespace WebProje1.Models
 
         public string BransAd { get; set; }
 
+        public string Foto { get; set; }
+
         //public ICollection<Antrenman> Antrenman { get; set; }
     }
 }

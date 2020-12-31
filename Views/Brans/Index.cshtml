@@ -15,6 +15,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.BransAd)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Foto)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -23,6 +26,10 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.BransAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Foto)
+                @*<img src="@Url.Content(item.Foto)" class="d-block w-50" asp-append-version="true" />*@
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

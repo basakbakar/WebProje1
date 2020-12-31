@@ -10,12 +10,18 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create">@*enctype="multipart/form-data"*@ @*Bu kısma sonradan dönülecek.*@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="BransAd" class="control-label"></label>
                 <input asp-for="BransAd" class="form-control" />
                 <span asp-validation-for="BransAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Foto" class="control-label"></label>
+                <input asp-for="Foto" class="form-control" />
+                @*<input type="file" class="form-control" name="files" />*@ @*Bu kısma sonradan dönülecek.*@
+                <span asp-validation-for="Foto" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

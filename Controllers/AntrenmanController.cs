@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using WebProje1.Data;
 using WebProje1.Models;
 
-namespace WebProje1.Controllers
+namespace WebProje1.Models
 {
     public class AntrenmanController : Controller
     {
@@ -64,7 +64,7 @@ namespace WebProje1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,AntrenmanAd,Sure,EtkiBolgesi,KapakFoto,Video,BransId,AntrenorId")] Antrenman antrenman)
+        public async Task<IActionResult> Create([Bind("Id,AntrenmanAd,Sure,EtkiBolgesi,KapakFoto,Video,Tarih,BransId,AntrenorId")] Antrenman antrenman)
         {
             if (ModelState.IsValid)
             {
@@ -74,14 +74,14 @@ namespace WebProje1.Controllers
 
 
                 string fileName = Guid.NewGuid().ToString();
-                var uploads = Path.Combine(webRootPath, @"images\brans");
+                var uploads = Path.Combine(webRootPath, @"images\antrenman");
                 var extension = Path.GetExtension(files[0].FileName);
 
                 using (var fileStream = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
                 {
                     files[0].CopyTo(fileStream);
                 }
-                antrenman.KapakFoto = @"\images\brans\" + fileName + extension;
+                antrenman.KapakFoto = @"\images\antrenman\" + fileName + extension;
 
                 //********
 
@@ -117,7 +117,7 @@ namespace WebProje1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,AntrenmanAd,Sure,EtkiBolgesi,KapakFoto,Video,BransId,AntrenorId")] Antrenman antrenman)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,AntrenmanAd,Sure,EtkiBolgesi,KapakFoto,Video,Tarih,BransId,AntrenorId")] Antrenman antrenman)
         {
             if (id != antrenman.Id)
             {

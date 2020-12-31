@@ -5,8 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Hosting;
 using WebProje1.Data;
 using WebProje1.Models;
+using System.IO;
 
 namespace WebProje1.Controllers
 {
@@ -14,9 +16,12 @@ namespace WebProje1.Controllers
     {
         private readonly ApplicationDbContext _context;
 
-        public BransController(ApplicationDbContext context)
+        private readonly IWebHostEnvironment _hostingEnvironment;
+
+        public BransController(ApplicationDbContext context, IWebHostEnvironment hostingEnvironment)
         {
             _context = context;
+            _hostingEnvironment = hostingEnvironment;
         }
 
         // GET: Brans
@@ -54,10 +59,27 @@ namespace WebProje1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,BransAd")] Brans brans)
+        public async Task<IActionResult> Create([Bind("Id,BransAd,Foto")] Brans brans)
         {
             if (ModelState.IsValid)
             {
+                //******
+                //string webRootPath = _hostingEnvironment.WebRootPath;
+                //var files = HttpContext.Request.Form.Files;
+
+
+                //string fileName = Guid.NewGuid().ToString();
+                //var uploads = Path.Combine(webRootPath, @"images\brans");
+                //var extension = Path.GetExtension(files[0].FileName);
+
+                //using (var fileStream = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
+                //{
+                //    files[0].CopyTo(fileStream);
+                //}
+                //brans.Foto = @"\images\brans\" + fileName + extension;
+
+                //********
+
                 _context.Add(brans);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -86,7 +108,7 @@ namespace WebProje1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,BransAd")] Brans brans)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,BransAd,Foto")] Brans brans)
         {
             if (id != brans.Id)
             {
