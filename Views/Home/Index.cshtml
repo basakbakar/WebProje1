@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<WebProje1.Models.Antrenman>
+@{
     ViewData["Title"] = "Home Page";
 }
 <head>
@@ -43,41 +44,64 @@
         <div class="sep-line"></div>
         <p class="section-title">Branşlar</p>
         <div class="programs-list">
-            <a href="">
-                <div class="program-card">
-                    <img src="~/images/brans/Pilates.png" alt="" class="card-thumbnail">
-                    <div class="overlay">
-                        <img src="~/images/design/overlay.png" alt="">
-                        <div class="detail">
-                            <p class="title">Pilates</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a href="">  
-                <div class="program-card">
-                    <img src="~/images/brans/Fitness.png" alt="" class="card-thumbnail">
-                    <div class="overlay">
-                        <img src="~/images/design/overlay.png" alt="">
-                        <div class="detail">
-                            <p class="title">Fitness</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a href="">
-                <div class="program-card">
-                    <img src="~/images/brans/Yoga.png" alt="" class="card-thumbnail">
-                    <div class="overlay">
-                        <img src="~/images/design/overlay.png" alt="">
-                        <div class="detail">
-                            <p class="title">Yoga</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
+            @*@foreach (var item in Model)
+            {<a href="">
+                 <div class="program-card">
 
-        </div>
+                     <img src="@item.KapakFoto" alt="" class="card-thumbnail">
+
+                     <div class="overlay">
+                         <img src="~/images/design/overlay.png" alt="">
+                         <div class="detail">
+                             <p class="title">@item.Brans.BransAd</p>
+                         </div>
+                     </div>
+                     <img src="@item.KapakFoto" alt="" class="card-thumbnail">
+
+                     <div class="overlay">
+                         <img src="~/images/design/overlay.png" alt="">
+                         <div class="detail">
+                             <p class="title">@item.Brans.BransAd</p>
+                         </div>
+                     </div>
+                 </div>
+                </a>
+                }*@
+                <a href="">
+                    <div class="program-card">
+                        <img src="~/images/brans/Pilates.png" alt="" class="card-thumbnail">
+                        <div class="overlay">
+                            <img src="~/images/design/overlay.png" alt="">
+                            <div class="detail">
+                                <p class="title">Pilates</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="program-card">
+                        <img src="~/images/brans/Fitness.png" alt="" class="card-thumbnail">
+                        <div class="overlay">
+                            <img src="~/images/design/overlay.png" alt="">
+                            <div class="detail">
+                                <p class="title">Fitness</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="program-card">
+                        <img src="~/images/brans/Yoga.png" alt="" class="card-thumbnail">
+                        <div class="overlay">
+                            <img src="~/images/design/overlay.png" alt="">
+                            <div class="detail">
+                                <p class="title">Yoga</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
     </section>
     <script src="~/Scripts/jquery-3.4.1.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>

@@ -151,7 +151,6 @@ C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\WebProje1
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\WebProje1.RazorCoreGenerate.cache
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs

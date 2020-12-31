@@ -107,8 +107,8 @@ namespace WebProje1.Models
             {
                 return NotFound();
             }
-            ViewData["AntrenorId"] = new SelectList(_context.Antrenor, "Id", "Id", antrenman.AntrenorId);
-            ViewData["BransId"] = new SelectList(_context.Brans, "Id", "Id", antrenman.BransId);
+            ViewData["AntrenorId"] = new SelectList(_context.Antrenor, "Id", "AntrenorAd", antrenman.AntrenorId);
+            ViewData["BransId"] = new SelectList(_context.Brans, "Id", "BransAd", antrenman.BransId);
             return View(antrenman);
         }
 
@@ -144,8 +144,8 @@ namespace WebProje1.Models
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AntrenorId"] = new SelectList(_context.Antrenor, "Id", "Id", antrenman.AntrenorId);
-            ViewData["BransId"] = new SelectList(_context.Brans, "Id", "Id", antrenman.BransId);
+            ViewData["AntrenorId"] = new SelectList(_context.Antrenor, "Id", "AntrenorAd", antrenman.AntrenorId);
+            ViewData["BransId"] = new SelectList(_context.Brans, "Id", "BransAd", antrenman.BransId);
             return View(antrenman);
         }
 
