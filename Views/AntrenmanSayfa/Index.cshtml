@@ -1,0 +1,45 @@
+﻿@model IEnumerable<WebProje1.Controllers.AntrenmanSayfaController.AntrenmanDTO>
+
+@{
+    ViewData["Title"] = "Antrenmanlar";
+}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="~/css/Genel.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <script src="~/js/font1.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery-3.3.1.min.js"></script>
+    <script>
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        window.dataLayer = window.dataLayer || [],
+            gtag("js", new Date),
+            gtag("config", "UA-24315669-1")</script>
+</head>
+<body>
+    <section id="workouts" class="workout-list">
+        <div class="sep-line"></div>
+        <p class="section-title">Antrenmanlar</p>
+        <div class="programs-list">
+            @foreach (var item in Model)
+            {
+                <a href="">
+                    <div class="program-card">
+                        <img src="@item.KapakFoto" alt="" class="card-thumbnail">
+                        <div class="overlay">
+                            <img src="~/images/design/overlay.png" alt="">
+                            <div class="detail">
+                                <p class="title">@item.Adi</p>
+                            </div>
+                        </div>
+                    </div> 
+                </a>
+            }
+            
+        </div>
+    </section>
+</body>
