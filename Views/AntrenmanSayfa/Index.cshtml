@@ -34,12 +34,15 @@
                             <img src="~/images/design/overlay.png" alt="">
                             <div class="detail">
                                 <p class="title">@item.Adi</p>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    @*<a href="@item.Video" class="btn alt playvideo" data-lity=""><span><i class="ion-ios-play-outline"></i>Oynat</span></a>*@
+                                    <iframe class="embed-responsive-item" src="@item.Video" allowfullscreen></iframe>
+                                </div>
                             </div>
                         </div>
                     </div> 
                 </a>
-            }
-            
+            }            
         </div>
     </section>
 </body>

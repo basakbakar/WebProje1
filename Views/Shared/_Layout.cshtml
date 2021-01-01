@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@*@model IEnumerable<WebProje1.Models.Brans>*@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -44,14 +45,18 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Anasayfa</a>
                         </li>
-                        <li>
-                            <a class="nav-link text-dark dropdown-toggle" data-toggle="dropdown" href="#">Branşlar <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Page 1-1</a></li>
-                                <li><a class="dropdown-item" href="#">Page 1-2</a></li>
-                                <li><a class="dropdown-item" href="#">Page 1-3</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="AntrenmanSayfa" asp-action="Index">Antrenmanlar</a>
                         </li>
+                        @*<li>
+            <a class="nav-link text-dark dropdown-toggle" data-toggle="dropdown" href="#">Branşlar <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                @foreach (var item in Model)
+                {
+                    <li><a class="dropdown-item" href="~/AntrenmanSayfa/Index">@item.BransAd</a></li>
+                }
+            </ul>
+        </li>*@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">İletişim</a>
                         </li>
@@ -116,7 +121,7 @@
 
         </footer>
     </div>
-    
+
     @*<script src="~/Scripts/jquery-3.4.1.min.js"></script>*@
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
