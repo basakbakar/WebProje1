@@ -30,11 +30,6 @@ namespace WebProje1.Controllers
             return View(db.ToList());
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

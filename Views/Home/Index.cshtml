@@ -45,53 +45,73 @@
         <p class="section-title">Branşlar</p>
         <div class="programs-list">
             @*@foreach (var item in Model)
-            {<a href="~/AntrenmanSayfa/Index">
-                 <div class="program-card">
-                     <img src="@item.KapakFoto" alt="" class="card-thumbnail">
-                     <div class="overlay">
-                         <img src="~/images/design/overlay.png" alt="">
-                         <div class="detail">
-                             <p class="title">@item.Brans.BransAd</p>
-                         </div>
+        {<a href="~/AntrenmanSayfa/Index">
+             <div class="program-card">
+                 <img src="@item.KapakFoto" alt="" class="card-thumbnail">
+                 <div class="overlay">
+                     <img src="~/images/design/overlay.png" alt="">
+                     <div class="detail">
+                         <p class="title">@item.Brans.BransAd</p>
                      </div>
                  </div>
-                </a>
-                }*@
-                <a href="~/AntrenmanSayfa/Index" title="Pilates">
+             </div>
+            </a>
+            }*@
+            @foreach (var item in Model)
+            {
+                @*@if (item.Tur == )
+            {*@
+                <a href="@item.Video" class="btn alt playvideo" data-lity="">
+                    <span><i class="ion-ios-play-outline"></i></span>
                     <div class="program-card">
-                        <img src="~/images/brans/Pilates.png" alt="" class="card-thumbnail">
+                        <img src="@item.KapakFoto" alt="" class="card-thumbnail">
                         <div class="overlay">
                             <img src="~/images/design/overlay.png" alt="">
                             <div class="detail">
-                                <p class="title">Pilates</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="program-card">
-                        <img src="~/images/brans/Fitness.png" alt="" class="card-thumbnail">
-                        <div class="overlay">
-                            <img src="~/images/design/overlay.png" alt="">
-                            <div class="detail">
-                                <p class="title">Fitness</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="program-card">
-                        <img src="~/images/brans/Yoga.png" alt="" class="card-thumbnail">
-                        <div class="overlay">
-                            <img src="~/images/design/overlay.png" alt="">
-                            <div class="detail">
-                                <p class="title">Yoga</p>
+                                <p class="date">Yükleme Tarihi: @item.Tarih</p>
+                                <p class="title">@item.AntrenmanAd</p>
+                                <div class="schedule">
+                                    <div class="entry">
+                                        <p class="value">@item.Sure Dakika</p>
+                                    </div>
+                                </div>
+                                <p class="more-details">
+                                    <span>Etki Bölgesi</span>@item.EtkiBolgesi
+                                </p>
                             </div>
                         </div>
                     </div>
                 </a>
 
-            </div>
+
+            }
+            <a asp-controller="AntrenmanSayfa" asp-action="Index">
+                <div class="program-card">
+                    <img src="~/images/brans/Fitness.png" alt="" class="card-thumbnail">
+                    <div class="overlay">
+                        <img src="~/images/design/overlay.png" alt="">
+                        <div class="detail">
+                            <div class="detail">
+                                <p class="title">Fitness</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="program-card">
+                    <img src="~/images/brans/Yoga.png" alt="" class="card-thumbnail">
+                    <div class="overlay">
+                        <img src="~/images/design/overlay.png" alt="">
+                        <div class="detail">
+                            <p class="title">Yoga</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
     </section>
     <script src="~/Scripts/jquery-3.4.1.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
