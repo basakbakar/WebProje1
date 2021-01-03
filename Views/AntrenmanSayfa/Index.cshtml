@@ -27,31 +27,27 @@
         <div class="programs-list">
             @foreach (var item in Model)
             {
-                @*@if (item.Tur == )
-                {*@
-                    <a href="@item.Video" class="btn alt playvideo" data-lity="">
-                        <span><i class="ion-ios-play-outline"></i></span>
-                        <div class="program-card">
-                            <img src="@item.KapakFoto" alt="" class="card-thumbnail">
-                            <div class="overlay">
-                                <img src="~/images/design/overlay.png" alt="">
-                                <div class="detail">
-                                    <p class="date">Yükleme Tarihi: @item.Tarih</p>
-                                    <p class="title">@item.Adi</p>
-                                    <div class="schedule">
-                                        <div class="entry">
-                                            <p class="value">@item.Sure Dakika</p>
-                                        </div>
+                <a href="@item.Video" class="btn alt playvideo" data-lity="">
+                    <span><i class="ion-ios-play-outline"></i></span>
+                    <div class="program-card">
+                        <img src="@item.KapakFoto" alt="" class="card-thumbnail">
+                        <div class="overlay">
+                            <img src="~/images/design/overlay.png" alt="">
+                            <div class="detail">
+                                <p class="date">Yükleme Tarihi: @item.Tarih</p>
+                                <p class="title">@item.Adi</p>
+                                <div class="schedule">
+                                    <div class="entry">
+                                        <p class="value">@item.Sure Dakika</p>
                                     </div>
-                                    <p class="more-details">
-                                        <span>Etki Bölgesi</span>@item.EtkiBolgesi
-                                    </p>
                                 </div>
+                                <p class="more-details">
+                                    <span>Etki Bölgesi</span>@item.EtkiBolgesi
+                                </p>
                             </div>
                         </div>
-                    </a>
-                
-                
+                    </div>
+                </a>    
             }
         </div>
     </section>

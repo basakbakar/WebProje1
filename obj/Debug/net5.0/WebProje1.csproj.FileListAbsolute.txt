@@ -296,3 +296,8 @@ C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Vie
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Antrenman\Edit.cshtml.g.cs
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\Antrenman\Index.cshtml.g.cs
 C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Views\AntrenmanSayfa\Index.cshtml.g.cs
+C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\BasakPc\Documents\GitHub\WebProje1\WebProje1\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
