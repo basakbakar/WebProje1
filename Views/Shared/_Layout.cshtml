@@ -10,28 +10,7 @@
     <script src="~/js/modernizr-2.8.3.js"></script>
 </head>
 <body>
-    @*<header>
-           <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-               <div class="container">
-                   <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WebProje1</a>
-                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                           aria-expanded="false" aria-label="Toggle navigation">
-                       <span class="navbar-toggler-icon"></span>
-                   </button>
-                   <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                       <ul class="navbar-nav flex-grow-1">
-                           <li class="nav-item">
-                               <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                           </li>
-                           <li class="nav-item">
-                               <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                           </li>
-                       </ul>
-                       <partial name="_LoginPartial" />
-                   </div>
-               </div>
-           </nav>
-        </header>*@
+   
     <div class="wrapper">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-0">
             <div class="container">
@@ -43,57 +22,29 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Anasayfa</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        @*<li>
-            <a class="nav-link text-dark dropdown-toggle" data-toggle="dropdown" href="#">Branşlar <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                @foreach (var item in Model)
-                {
-                    <li><a class="dropdown-item" href="~/AntrenmanSayfa/Index">@item.BransAd</a></li>
-                }
-            </ul>
-        </li>*@
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">İletişim</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="Index">Contact</a>
                         </li>
                         <li>
                             <a class="nav-link text-dark dropdown-toggle" data-toggle="dropdown" href="#">Admin <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Antrenman" asp-action="Index">Antrenmanlar</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Antrenor" asp-action="Index">Antrenörler</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Brans" asp-action="Index">Branşlar</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Ulke" asp-action="Index">Ülkeler</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Il" asp-action="Index">İller</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Ilce" asp-action="Index">İller</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-controller="SporSalon" asp-action="Index">SporSalonları</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Antrenman" asp-action="Index">Workouts</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Antrenor" asp-action="Index">Trainers</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Brans" asp-action="Index">Branches</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Ulke" asp-action="Index">Countries</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Il" asp-action="Index">Cities</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Ilce" asp-action="Index">Districts</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="SporSalon" asp-action="Index">Sports Centers</a></li>
                             </ul>
                         </li>
-                        @*<li>
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Branşlar <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Page 1-1</a></li>
-                <li><a href="#">Page 1-2</a></li>
-                <li><a href="#">Page 1-3</a></li>
-            </ul>
-        </li>*@
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>
     </div>
-    @*<div class="container">
-            <main role="main" class="pb-3">
-                @RenderBody()
-            </main>
-        </div>
-
-        <footer class="border-top footer text-muted">
-            <div class="container">
-                &copy; 2020 - WebProje1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-            </div>
-        </footer>*@
     <div class="container body-content">
         @RenderBody()
         <hr />

@@ -29,20 +29,20 @@
         </div>
         <br><br><br><br><br><br><br><br><br>
         <div class="header-title">
-            <h1>Haydi Başlayalım!</h1>
+            <h1>Let's Start!</h1>
             <div class="sig-tag">
                 <div class="sig-line"></div>
             </div>
             <a href="#workouts" class="scroll-btn">
                 <span></span>
-                Kaydır
+                Scroll
             </a>
         </div>
     </header>
 
     <section id="workouts" class="workout-list">
         <div class="sep-line"></div>
-        <p class="section-title">Branşlar</p>
+        <p class="section-title">Free Home Workouts</p>
         <div class="programs-list">
             @foreach (var item in Model)
             {
@@ -54,7 +54,7 @@
                             <img src="~/images/design/overlay.png" alt="">
                             <div class="detail">
                                 <div class="schedule">
-                                    <p class="date">Yükleme Tarihi: @item.Tarih</p>
+                                    <p class="date">Release Date: @item.Tarih</p>
                                 </div>
                                     <p class="title">@item.AntrenmanAd</p>
                                 <div class="schedule">
@@ -62,11 +62,11 @@
                                         <p class="value">@item.Antrenor.AntrenorAd</p>
                                     </div>
                                     <div class="entry">
-                                        <p class="value">@item.Sure Dakika</p>
+                                        <p class="value">@item.Sure Minutes</p>
                                     </div>
                                 </div>
                                 <div class="schedule">
-                                    <p class="more-details"><span>Etki Bölgesi: </span>@item.EtkiBolgesi</p>
+                                    <p class="more-details"><span>Type: </span>@item.EtkiBolgesi</p>
                                 </div> 
                             </div>
                             </div>
